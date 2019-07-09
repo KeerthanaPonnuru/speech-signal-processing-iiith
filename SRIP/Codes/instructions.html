@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Instructions</title>
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body bgcolor="#E5E4E2">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Instructions for Installation</button>
+  <div id="myDropdown" class="dropdown-content">
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<p> <b> <button>Steps to run the experiment</button></b></p>
+<p><button>Download</button></p>
+
+ <ul>
+   <li> npm - npm install tone</li>
+   <li> dev - npm install tone@next</li>
+    <li>CDN - <a href="https://cdnjs.cloudflare.com/ajax/libs/tone/13.0.1/Tone.min.js">https://cdnjs.cloudflare.com/ajax/libs/tone/13.0.1/Tone.min.js</a></li>
+</ul>
+<p><b>Usage</b></p>
+<button>Basic</button>
+<p>If Tone.js is included in the page, a global variable named Tone will be added to the window.
+Module Loaders</p>
+<p>Internally, Tone uses AMD for dependency management. But the build process adds a UMD footer to the built file which makes it compatible with both
+<br>
+AMD and CommonJS.</p>
+<br>
+<p><b><button>Newbie MacOS QuickStart to Get Examples Running</button></b></p>
+<p>If you have XCode installed on your Mac, you should be able to get the examples running with the following steps: Download the .zip file from github: <a href="https://github.com/Tonejs/Tone.js/archive/dev.zip">https://github.com/Tonejs/Tone.js/archive/dev.zip</a></p>
+<p><b>The file should unzip automatically, so then in a Terminal window go into the directory:</b></p>
+
+<p>$ cd Tone.js-dev</p>
+
+<p>and run the commands:</p>
+$ npm install 
+...
+$ npm run build
+<p> For Aliasing and Quantization change the Tempo and the corresponding sampling</p>
+<p> For Filter Design change the partial count and observe the corresponding change in waveform</p>
+<p> The in built-audio for waveform and waveform enables you to view the waveform and pause and notice changes in pattern respectively</p>
+
+</body>
+</html>
