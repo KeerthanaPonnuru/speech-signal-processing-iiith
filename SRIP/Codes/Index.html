@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Digital Signal Proceesing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../dsp.js"></script>
+<style>
+  input.MyButton1 {
+    background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+/*width: 100px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+-moz-box-shadow:: 6px 6px 5px #999;
+-webkit-box-shadow:: 6px 6px 5px #999;
+box-shadow:: 6px 6px 5px #999;*/
+}
+input.MyButton5 {
+    background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+input.MyButton2 {
+    background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+input.MyButton3 {
+    background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+input.MyButton4 {
+    background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+input.MyButton6 {
+    background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+  background-color: #E0FFFF;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #f1f1f1;
+  padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 800px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Speech Signal Processing Lab</h2>
+
+<header>
+  <h2>Basics of DSP</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><form>
+  <p><b>In-Built Audio for Waveform</b></p>
+<input class="MyButton1" type="button" value="1" onclick="window.location.href='./audio.html'" />
+<p><b>Aliasing and Quantization effect</b></p>
+<input class="MyButton5" type="button" value="2" onclick="window.location.href='./AliasingandQuantizationEffect.html'" />
+<p><b>Filter Design</b></p>
+<input class="MyButton2" type="button" value="3" onclick="window.location.href='./Filterdesign.html'" />
+<p><b>Waveform</b></p>
+<input class="MyButton3" type="button" value="4" onclick="window.location.href='./Waveform.html'" />
+<p><b>Impulse and Magnitude Response</b></p>
+<input class="MyButton4" type="button" value="5" onclick="window.location.href='images/img.png'" />
+</form>
+<!--<a href="./audio.html">In-Built Audio for Waveform</a></li>-->
+      <!--<li><a href="./4part1.html">In-built Audio for Waveform</a></li>
+      <li><a href="./5.html"> Filter Design</a></li>
+      <li><a href="./Waveform.html"> Waveform</a></li>
+      <li><a href="/home/keerthana/speech-signal-processing-iiith/SRIP/Codes/i.html">Impulse and Magnitude Response</a></li>
+      <li><a href="images/img.png"><img src="image/img.jpg" width="82" height="86" title="img" alt="Impulse"> and Magnitude Response</a></li>-->
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Experiment 4</h1>
+    <p>To perform the necessary experiment select the respective button</p>
+    <form>
+      <input class="MyButton6" type="button" value="Instructions" onclick="window.location.href='./instructions.html'" />
+    </form>
+        
+  </article>
+</section>
+
+<footer>
+  <p> IIITH</p>
+</footer>
+<!--<script>
+    function test(){
+        alert("Hello");- // added sample text
+    }
+ </script>-->
+
+
+<!--<% 
+ArrayList<Marker> list = new ArrayList<Marker>();
+
+list = (ArrayList<Marker>)request.getAttribute("markers"); 
+
+for(int i = 0; i < list.size(); i++){
+    %>
+        <script>
+        test(); //No need to put java script code inside scriptlet
+        </script>
+    <%
+}
+%>-->
+
+</body>
+</html>
+
