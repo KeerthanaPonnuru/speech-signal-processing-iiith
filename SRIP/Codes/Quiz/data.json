@@ -1,0 +1,92 @@
+{
+    "artciles": [
+        {
+            "q" : "The interface between an analog signal and a digital processor is ________?",
+            "opt1" : "D/A converter",
+            "opt2" : "A/D converter",
+            "opt3" : "Modulator",
+            "answer" : "D/A converter",
+            "decription" :"A D/A converter takes a precise number (most commonly a fixed-point binary number) and converts it into a physical quantity (example: voltage or pressure). D/A converters are often used to convert finite-precision time series data to a continually varying physical signal."
+        },
+        {
+            "q" : " Which of the following is common independent variable for speech signal, EEG and ECG?",
+            "opt1" : "Time",
+            "opt2" : "Spatial coordinates",
+            "opt3" : "Pressure",
+            "answer" : "Time",
+            "description" :"Speech, EEG and ECG signals are the examples of information-bearing signals that evolve as functions of a single independent variable, namely, time."
+        },
+        {
+            "q" : "Which of the following conditions made digital signal processing more advantageous over analog signal processing?",
+            "opt1" : "Flexibility and Accuracy",
+            "opt2" : "Accuracy and Storage",
+            "opt3" : "Flexibility,Accuracy and Storage",
+            "answer" : "Flexibility,Accuracy and Storage",
+            "description" :"Digital programmable system allows flexibility in reconfiguring the DSP operations by just changing the program, as the digital signal is in the form of 1 and 0’s it is more accurate and it can be stored in magnetic tapes."
+        },
+        {
+            "q" : "Which property does y(t)=x(1-t) exhibit?",
+            "opt1" : "Reflecting",
+            "opt2" : "Time shifting and reflecting",
+            "opt3" : "Time shifting",
+            "answer" : "Time shifting and reflecting",
+            "description":"First the signal x(t) is shifted by 1 to get x(1+t) and it is reflected to get x(1-t). So, it exhibits both time shifting and reflecting properties."
+        },
+        {
+            "q" : "If a signal x(t) is processed through a system to obtain the signal (x(t)2), then the system is said to be:____",
+            "opt1" : "Linear",
+            "opt2" : "Exponential",
+            "opt3" : "Non-Linear",
+            "answer" : "Non-Linear",
+            "description":"Let the input signal be ‘t’. Then the output signal after passing through the system is y=t2 which is the equation of a parabola. So, the system is non-linear. "
+        },
+        {
+            "q" : "Which of the following wave is known as “amplitude modulated wave” of x(t)? __________",
+            "opt1" : "C.x(t) (where C is a constant)",
+            "opt2" : "x(t)+y(t)",
+            "opt3" : "x(t).y(t)",
+            "answer" : "x(t).y(t)",
+            "decription" :"The multiplicative operation is often encountered in analog communication, where an audio frequency signal is multiplied by a high frequency sinusoid known as carrier. The resulting signal is known as “amplitude modulated wave”."
+        },
+        {
+            "q" : "What is the type of quantizer, if a Zero is assigned a quantization level?",
+            "opt1" : "Midrise type",
+            "opt2" : "Mid tread type",
+            "opt3" : "Mistreat type",
+            "answer" : "Mid tread type",
+            "description" : "If a zero is assigned a quantization level, the quantizer is of the mid treat type."
+        },
+        {
+           "q" : "The techniques used for sampling are ________",
+            "opt1" : "Instantaneous sampling and Natural sampling and Flat top sampling",
+            "opt2" : "Natural sampling and Flat top sampling",
+            "opt3" : "Flat top sampling",
+            "answer" : "Instantaneous sampling and Natural sampling and Flat top sampling",
+            "description" : "Sampling includes Instantaneous sampling and Natural sampling and Flat top sampling"
+        },
+        {
+            "q" : " Which of the following is not suitable either as low pass or a high pass filter?",
+            "opt1" : " h(n) symmetric and M even ",
+            "opt2" : " h(n) anti-symmetric and M odd",
+            "opt3" : " h(n) anti-symmetric and M even",
+            "answer" : "h(n) anti-symmetric and M odd",
+            "description" : "If h(n)=-h(M-1-n) and M is odd, we get H(0)=0 and H(π)=0. Consequently, this is not suitable as either a low pass filter or a high pass filter."
+        },
+        {
+            "q" : " What are the main characteristics of Anti aliasing filter?",
+            "opt1" : "Ensures that bandwidth of signal to be sampled is limited to frequency range ",
+            "opt2" : "To limit the additive noise spectrum and other interference, which corrupts the signal",
+            "opt3" : "All of the above",
+            "answer" : "All of the above",
+            "description" : " The anti aliasing filter is an analog filter which has a twofold purpose. First, it ensures that the bandwidth of the signal to be sampled is limited to the desired frequency range. Using an antialiasing filter is to limit the additive noise spectrum and other interference, which often corrupts the desired signal. Usually, additive noise is wideband and exceeds the bandwidth of the desired signal."
+        },
+        {
+            "q": " When the frequency band is selected we can specify the sampling rate and the characteristics of the pre filter, which is also called as __________ filter.",
+            "opt1": "Analog filter",
+            "opt2": "Anti aliasing filter",
+            "opt3": "Both",
+            "answer": "Anti aliasing filter",
+            "description" : "Once the desired frequency band is selected w e can specify the sampling rate and the characteristics of the pre filter, which is also called an anti aliasing filter. The anti aliasing filter is an analog filter which has a twofold purpose."
+        }
+    ]
+}
